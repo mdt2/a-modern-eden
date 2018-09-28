@@ -1,0 +1,52 @@
+<section class="c-form o-layout o-layout__vertical-space">
+  <fieldset class="c-form__fieldset">
+    <legend class="c-form__legend">Want to become an AME retail partner? Just tell us a few things about you, and we’ll be in touch in 1–2 business days to set up your account. Or give us a call at <a class="c-form__link" href="tel:1-123-1234">(123) 123-1234.</a></legend>
+    <div class="o-layout__flex">
+      <div class="o-layout__flex--item c-form__flex--item">
+        <label class="c-form__label" for="f-name">First Name</label>
+        <input class="c-form__input c-form__field-box" type="text" id="f-name" name="f-name" autocomplete="given-name">
+        <label class="c-form__label" for="l-name">Last Name</label>
+        <input class="c-form__input c-form__field-box" type="text" id="l-name" name="l-name" autocomplete="family-name">
+        <label class="c-form__label" for="email">Email</label>
+        <input class="c-form__input c-form__field-box" type="text" id="email" name="email" autocomplete="email">
+      </div>
+
+      <fieldset class="c-form__fieldset o-layout__flex--item c-form__flex--item">
+        <legend class="c-form__label">Products I'm interested in</legend>
+        <div class="c-form__checkboxes c-form__field-box">
+          <label class="c-form__label--checkbox" for="poster">12” x 16” Screenprinted Posters
+            <input class="c-form__input--checkbox" type="checkbox" id="poster" name="checked" value="posters">
+            <div class="c-form__custom-checkbox"></div>
+          </label>
+
+          <label class="c-form__label--checkbox" for="flashcards">A to Z Flashcards
+            <input class="c-form__input--checkbox" type="checkbox" id="flashcards" name="checked" value="flashcards">
+            <div class="c-form__custom-checkbox"></div>
+          </label>
+
+          <label class="c-form__label--checkbox" for="puzzles">Wall Decals - Puzzles
+            <input class="c-form__input--checkbox" type="checkbox" id="puzzles" name="checked" value="puzzles">
+            <div class="c-form__custom-checkbox"></div>
+          </label>
+
+          <label class="c-form__label--checkbox" for="decor">Wall Decals - Decor
+            <input class="c-form__input--checkbox" type="checkbox" id="decor" name="checked" value="decor">
+            <div class="c-form__custom-checkbox"></div>
+          </label>
+
+          <label class="c-form__label--checkbox" for="phone-app">iPhone Apps
+            <input class="c-form__input--checkbox" type="checkbox" id="phone-app" name="checked" value="phone-app">
+            <div class="c-form__custom-checkbox"></div>
+          </label>
+
+          <label class="c-form__label--checkbox" for="custom">Custom Product
+            <input class="c-form__input--checkbox" type="checkbox" id="custom" name="checked" value="custom">
+            <div class="c-form__custom-checkbox"></div>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+    <button class="c-button">Submit my info</button>
+  </fieldset>
+  {{> patterns.svg.goldfish }}
+</section>

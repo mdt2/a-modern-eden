@@ -1,0 +1,153 @@
+.c-product {
+  position: relative;
+  margin: 4rem auto;
+
+  &-container {
+    margin-top: 4rem;
+  }
+
+  &--flashcards {
+    background-image: $c-storm-cloud;
+    margin: 2rem auto;
+    padding: 5vw 1rem 15vw;
+
+    @media (min-width: $bp-product-unwrap) {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      padding: 8vw 0 15vw;
+    }
+  }
+
+  &--posters {
+    background-image: $c-sand;
+    padding: 10vw 1rem 10vw;
+
+    @media (min-width: $bp-product-unwrap) {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+    
+    @media (min-width: $bp-svg-container-max-width) {
+      padding: 10vw 0 11vw;
+    }
+  }
+
+  &--puzzles {
+    background-image: $c-baby-pink;
+    padding: 8vw 1rem 11vw;
+
+    @media (min-width: $bp-product-unwrap) {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      padding: 10vw 0 13vw;
+    }
+  }
+
+  &--apps {
+    background-image: $c-product-taupe;
+    padding: 8vw 1rem 10vw;
+
+    @media (min-width: $bp-product-unwrap) {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      padding: 10vw 0 10vw;
+    }
+  }
+  
+  &__svg {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+
+    &--top {
+      top: -2px;
+    }
+
+    &--bottom {
+      bottom: -2px;
+    }
+  }
+
+  &__flex {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+    
+    @media (min-width: $bp-product-unwrap) {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      max-width: 60%;
+    }
+  }
+
+  &__info {
+    margin: 1em 0;
+
+    @media (min-width: $bp-product-unwrap) {
+      margin: 0 1.5rem;
+    }
+  }
+
+  &__name,
+  &__description {
+    max-width: 17rem;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+    text-align: center;
+    
+    @media (min-width: $bp-product-unwrap) {
+      text-align: left;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      max-width: 25rem;
+    }
+  }
+
+  &__name {
+    margin-bottom: 0.5em;
+  }
+
+  &__description {
+    & + & {
+      margin-top: 0.25em;
+    }
+
+    &--bold {
+      font-family: AvenirNext, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  &__img {
+    max-width: 50rem;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+    order: 2;
+    
+    @media (min-width: 50rem) {
+      order: unset;
+      width: 70%;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      max-width: unset;
+    }
+  }
+}

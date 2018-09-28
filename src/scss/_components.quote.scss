@@ -1,0 +1,146 @@
+$bp-quote-m: 50rem;
+$bp-quote-l: 73rem;
+
+.c-quote {
+  background-color: $c-taupe;
+  position: relative;
+  padding: 1rem 0;
+  overflow: hidden;
+  margin: 2rem auto;
+
+  @media (min-width: $bp-quote-m) {
+    padding: 2rem 0;
+  }
+
+  @media (min-width: $bp-quote-l) {
+    padding: 8vw 0;
+  }
+
+  @media (min-width: $bp-xl) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: 125rem) {
+    padding: 10vw 0;
+  }
+
+  &__svg {
+    position: absolute;
+    z-index: 100;
+    width: 104vw;
+    left: -2vw;
+
+    &--top {
+      top: -2px;
+    }
+
+    &--bottom {
+      bottom: -2px;
+    }
+  }
+
+  &__layout {
+    align-items: center;
+    position: relative;
+    z-index: 200;
+
+    @media (min-width: $bp-quote-l) {
+      padding-top: 6rem;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      max-width: 60%;
+    }
+  }
+
+  &__info {
+    max-width: 50rem;
+    margin: 2rem 1rem 0;
+
+    @media (min-width: $bp-m) {
+      text-align: center;
+    }
+
+    @media (min-width: $bp-quote-l) {
+      margin-left: 2.5em;
+      margin-top: 0;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      max-width: 35vw;
+      margin-left: 5em;
+    }
+  }
+
+  &__quotation-mark {
+    display: none;
+
+    @media (min-width: 75.5rem) {
+      display: block;
+      max-width: 5rem;
+      position: absolute;
+      z-index: 101;
+      top: 10rem;
+      left: 25rem;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      left: 22vw;
+    }
+
+    & + & {
+      margin-left: 6.5rem;
+    }
+  }
+
+  &__quote-content {
+    position: relative;
+    z-index: 102;
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-bottom: 1em;
+    
+    @media (min-width: $bp-xs) {
+      font-size: 5vw;
+    }
+    
+    @media (min-width: $bp-s) {
+      font-size: 1.75rem;
+    }
+    
+    @media (min-width: $bp-m) {
+      text-align: center;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      font-size: 1.25vw;
+    }
+  }
+
+  &__speaker {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: $c-outer-space;
+    margin-top: 1.5em;
+
+    @media (min-width: $bp-svg-container-max-width) {
+      font-size: 0.75vw;
+    }
+  }
+}
+
+.svg-owl {
+  max-width: 20rem;
+  width: 10rem;
+
+  @media (min-width: $bp-s) {
+    width: calc(10rem + 16vw);
+  }
+
+  @media (min-width: $bp-quote-m) {
+    width: 100%;
+  }
+}

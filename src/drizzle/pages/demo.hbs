@@ -1,0 +1,25 @@
+---
+title: Demo
+name: Demo Page
+subtitle: Hello World!
+layout: template
+demoContent: This is some demo content on a page
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <main class="content">
+      {{> patterns.components.site-hero }}
+      {{> patterns.svg.paws-r }}
+      {{> patterns.components.quote }}
+      {{> patterns.svg.paws-l }}
+      {{> patterns.components.products }}
+      {{> patterns.svg.paws-l }}
+      {{> patterns.components.contact }}
+      {{> patterns.components.footer }}
+    </main>
+  </body>
+</html>

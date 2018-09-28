@@ -1,0 +1,47 @@
+.c-site-footer {
+  padding: 3rem 1rem;
+  background-color: $c-white;
+
+  &__copyright {
+    @media (min-width: $bp-l) {
+      display: inline-block;
+      float: left;
+    }
+  }
+
+  &__links {
+    display: block;
+    margin-top: 1em;
+    @media (min-width: $bp-l) {
+      display: inline-block;
+      float: right;
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: $c-gray;
+    text-decoration: none;
+    padding: 0.125rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      @include focus-shadow;
+    }
+    
+    & + & {
+      margin-left: 2em;
+    }
+  }
+
+  &__icon {
+    width: 1.25rem;
+    margin-bottom: -0.25em;
+    margin-right: 0.5em;
+  }
+}

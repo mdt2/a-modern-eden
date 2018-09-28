@@ -1,0 +1,48 @@
+.c-button {
+    @include unbuttonize;
+    background-color: $c-goldfish;
+    box-shadow: $c-item-shadow;
+    border-radius: 1.375em; 
+    padding: 1.5rem 2.75rem;
+    color: $c-outer-space;
+    font-family: AvenirNext, sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    display: block;
+    position: relative;
+    z-index: 200;
+
+    &:focus {
+      @include focus-outline;
+    }
+
+    @media (min-width: $bp-l) {
+      &:hover {
+        animation: grow-up 0.125s linear 1 normal forwards;
+      }
+  
+      &:active {
+        animation: grow-up 0.25s linear 1 normal;
+      }
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      font-size: 0.9vw;
+      margin: 8 auto;
+    }
+  }
+
+  @keyframes grow-up {
+    from {
+      transform: translateY(0);
+      transform: scale(1);
+    }
+
+    to {
+      transform: translateY(-0.25rem);
+      transform: scale(1.1);
+    }
+  }

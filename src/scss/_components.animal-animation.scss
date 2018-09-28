@@ -1,0 +1,280 @@
+// MONKEY
+.svg-monkey {
+  &__eyes {
+    animation: blink 4s infinite;
+  }
+}
+
+@keyframes blink {
+  0%, 10%, 100% { opacity: 1; }
+  5% { opacity: 0; }
+}
+
+// GIRAFFE
+.svg-giraffe__tail-end {
+  animation: wag 1.5s infinite alternate;
+}
+
+@keyframes wag {
+  from {
+    tranform: rotate(0deg);
+    transform-origin: 300px 800px;
+  }
+  to {
+    transform: rotate(10deg); 
+    transform-origin: 300px 775px;
+  }
+}
+
+// CLOUDS
+.svg-cloud {
+  display: none;
+
+  @media (min-width: $bp-m) {
+    display: inherit;
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+    animation: move 100s linear infinite running;
+
+    &-two-skinny-top {
+      top: 6rem;
+      width: 12rem;
+      animation-delay: 15s;
+    }
+    
+    &-two-skinny-bottom {
+      bottom: 10rem;
+      width: 15rem;
+      animation-delay: 70s;
+    }
+
+    &-asymetric {
+      top: 14rem;
+      width: 25rem;
+      animation-delay: 55s;
+    }
+
+    &-skinny {
+      bottom: 30rem;
+      width: 20rem;
+      animation-delay: 35s;
+    }
+
+    &-skinny--once {
+      top: 14rem;
+      width: 20rem;
+      animation: starter-cloud 100s linear forwards;
+    }
+
+    &-standard {
+      bottom: 20rem;
+      width: 23rem;
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-60vw);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 0.5;
+  }
+}
+
+@keyframes starter-cloud {
+  from {
+    transform: translateX(10vw);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 0.5;
+  }
+}
+
+// GOLDFISH
+.svg-goldfish {
+  animation: bob 2s alternate infinite running;
+
+  .bubbles {
+    animation: fish-bubble 3s linear infinite running;
+    opacity: 0;
+    
+    &6 {
+      animation-delay: 1.25s;
+    }
+    
+    &5 {
+      animation-delay: 1.05s;
+    }
+    
+    &4 {
+      animation-delay: 1s;
+    }
+   
+    &3 {
+      animation-delay: 0.65s;
+    }
+    
+    &2 {
+      animation-delay: 0.5s;
+    }
+    
+    &1 {
+      animation-delay: 0.25s;
+    }
+    
+  }
+}
+
+@keyframes fish-bubble {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateX(8px);
+    transform: translateY(-10px);
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes bob {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(4px);
+  }
+}
+
+// BUBBLES
+.svg-bubbles {
+  .bubble {
+    animation: bubble 3s linear infinite running;
+    opacity: 0;
+    
+    &1 {
+      animation-delay: 1.25s;
+    }
+    
+    &2 {
+      animation-delay: 1.05s;
+    }
+    
+    &3 {
+      animation-delay: 1s;
+    }
+    
+    &4 {
+      animation-delay: 0.65s;
+    }
+    
+    &5 {
+      animation-delay: 0.5s;
+    }
+    
+    &6 {
+      animation-delay: 0.25s;
+    }
+    
+  }  
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateX(8px);
+    transform: translateY(-10px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+// PAWS
+.paws {
+  position: relative;
+  z-index: 2000;
+  margin: 0 auto;
+}
+
+.paw {
+  opacity: 0;
+  max-width: 4.75rem;
+  width: 4.5vw;
+  position: absolute;
+
+  &-l-1 {
+    top: -6rem;
+    left: 0;
+  }
+
+  &-l-2 {
+    top: 1rem;
+    left: 11rem;
+  }
+  
+  &-l-3 {
+    top: 13rem;
+    left: 5rem;
+  }
+
+  &-r-1 {
+    top: -15rem;
+    right: 0;
+  }
+
+  &-r-2 {
+    top: -8rem;
+    right: 11rem;
+  }
+
+  &-r-3 {
+    top: 4rem;
+    right: 5rem;
+  }
+}
+
+.animate {
+  @media (min-width: 50rem) {
+    & > .paw-l-1, .paw-r-1 {
+      animation: paws 2s forwards;
+    }
+  
+    & > .paw-l-2, .paw-r-2 {
+      animation: paws 2s forwards;
+      animation-delay: 0.5s;
+    }
+  
+    & > .paw-l-3, .paw-r-3 {
+      animation: paws 2s forwards;
+      animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes paws {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}

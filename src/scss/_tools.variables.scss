@@ -1,0 +1,55 @@
+//Color vars define the color palette to be used across the site
+//If a main color changes, we can just change it here
+//Named semantically for what they look like
+
+//Primary colors
+$c-seafoam-blue: #D3EBED;
+$c-taupe: #CCC4B8;
+
+//Accent colors
+$c-goldfish: #FCB100;
+
+//Product background colors, use with background-image
+$c-storm-cloud: linear-gradient(-44deg, #C9D6D2 5%, #F2FFFB 100%);
+$c-sand: linear-gradient(-45deg, #E3E2CC 0%, #F6F5DB 100%);
+$c-baby-pink: linear-gradient(-147deg, #F5E0DB 0%, #FFF3F0 100%);
+$c-product-taupe: linear-gradient(-46deg, #CCC4B8 0%, #E8E3DC 100%);
+
+//Grays
+$c-outer-space: #0A3040;
+$c-gray: #636E73;
+$c-gray-light: lighten($c-gray, 50%);
+$c-white: #FFFFFF;
+
+//Tints
+$c-item-shadow: 5px 5px 15px 0 rgba(0,0,0,0.20);
+
+//Accessibility
+$c-focus-state-blue: rgb(77, 144, 254);
+
+//Font vars establish a reusable font-stack
+$font--primary: AvenirNext, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+
+//Breakpoint vars define points at which the layout needs changed
+//Helps with responsive design
+//Limits breakpoints in media queries
+
+//Layout breakpoints
+$bp-xxs: 20rem;
+$bp-xs: 25rem;
+$bp-s: 30rem;
+$bp-m: 45rem;
+$bp-l: 60rem;
+$bp-xl: 75rem;
+$bp-xxl: 100rem;
+$bp-max-width: 75rem;
+
+//Store and sign up info
+$bp-store-margin: 56rem;
+$bp-store-text-align: 42rem;
+$bp-purchase-max-w: 64.5rem;
+$bp-svg-container-max-width: 125rem;
+$bp-svg-max-width: 130rem;
+
+//Product
+$bp-product-unwrap: 50rem;

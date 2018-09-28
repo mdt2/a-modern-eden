@@ -1,0 +1,29 @@
+//Unbuttonize removes default browser rules for <button> elements
+@mixin unbuttonize {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+}
+
+//Reset fieldset browser rules
+@mixin resetFieldset {
+  border: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+@mixin focus-outline {
+  outline: none; //0.1875rem solid $c-outer-space;
+  box-shadow: 0px 0px 0px 3px $c-outer-space;
+}
+
+@mixin focus-shadow {
+  outline: none;
+  // box-shadow: 0px 0px 4px 2px $c-goldfish;
+  box-shadow: 0px 0px 0px 3px $c-outer-space;
+  border-radius: 4px;
+}

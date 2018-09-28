@@ -1,0 +1,61 @@
+.c-locations {
+  max-width: $bp-purchase-max-w;
+  position: relative;
+  z-index: 200;
+
+  @media (min-width: $bp-svg-container-max-width) {
+    max-width: 50%;
+  }
+
+  &__store-container {
+    text-align: center;
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  &__store {
+    margin: 1rem;
+    width: 17rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: none;
+    background: $c-gray-light;
+    box-shadow: $c-item-shadow;
+    border-radius: 0.75rem;
+    
+    @media (min-width: $bp-store-margin) {
+      & + & {
+        margin-left: 3rem;
+      }
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      & + & {
+        margin-left: 2.75vw;
+      }
+    }
+
+    @media (min-width: 170rem) {
+      width: 22rem;
+    }
+  }
+
+  &__info {
+    margin: 0.625em 0;
+    text-align: center;
+
+    @media (min-width: $bp-store-text-align) {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    hyphens: auto;
+    padding: 0.125rem;
+
+    &:focus {
+      @include focus-shadow;
+    }
+  }
+}

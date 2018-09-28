@@ -1,0 +1,29 @@
+.o-layout {
+  margin: 0 auto;
+  max-width: $bp-max-width;
+  padding: 1rem;
+}
+
+.o-layout--svg-bg {
+  margin: 0 auto;
+  max-width: $bp-svg-max-width;
+}
+
+.o-layout__vertical-space {
+  margin: 3.5rem auto;
+}
+
+.o-layout__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  &--item {
+    margin: 2rem 0;
+
+    @media (min-width: $bp-s) {
+      margin: 2rem;
+    }
+  }
+}

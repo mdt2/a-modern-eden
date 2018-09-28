@@ -1,0 +1,150 @@
+.c-site-hero {
+  margin: 0 auto;
+  background-color: $c-seafoam-blue;
+  position: relative;
+  overflow: hidden;
+  padding: 4vh 0 10vh;
+
+  @media (min-width: $bp-xxs) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 50rem) {
+    padding-top: 7vh;
+  }
+
+  @media (min-width: $bp-xl) {
+    padding: 10rem 1rem 14rem;
+  }
+
+  &__svg-bg {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    z-index: 500;
+    overflow: hidden;
+  }
+
+  &__animal-container {
+    position: relative;
+    top: -5vw;
+    max-width: 130rem;
+    width: 100%;
+  }
+
+  &__info {
+    max-width: 46rem;
+    position: relative;
+    z-index: 200;
+
+    @media (min-width: $bp-xl) {
+      margin-left: 0;
+    }
+
+    @media (min-width: $bp-svg-container-max-width) {
+      max-width: 38vw;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 15rem;
+    max-width: 25rem;
+    margin-left: 2rem;
+
+    @media (min-width: $bp-xs) {
+      width: 68vw;
+    }
+
+    @media (min-width: $bp-m) {
+      width: 25rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin: 0.5em 0;
+    text-align: left;
+    margin-left: 2rem;
+
+    @media (min-width: $bp-xl) {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    text-align: left;
+    margin-left: 2rem;
+    
+    @media (min-width: $bp-xl) {
+      text-align: center;
+    }
+  }
+}
+
+//Animals
+.svg-monkey-in-tree {
+  visibility: hidden;
+  position: absolute;
+  z-index: 150;
+
+  @media (min-width: $bp-xl) {
+    visibility: visible;
+    height: 100%;
+    top: -1rem;
+    left: -12rem;
+  }
+
+  @media (min-width: 87.5rem) {
+    left: -8vw;
+  }
+
+  @media (min-width: $bp-xxl) {
+    left: 0;
+  }
+
+  @media (min-width: $bp-svg-container-max-width) {
+    left: 3vw;
+  }
+}
+
+.svg-giraffe {
+  display: none;
+
+  @media (min-width: $bp-xxs) {
+    display: unset;
+    width: 130%;
+    float: right;
+    shape-outside: url('/svg/giraffe.svg');
+    shape-margin: 0.5em;
+    margin-right: -28vw;
+    margin-bottom: -40%;
+  }
+
+  @media (min-width: 35rem) {
+    width: 115%;
+  }
+
+  @media (min-width: $bp-m) {
+    margin-right: -25vw;
+    margin-bottom: -50%;
+  }
+
+  @media (min-width: $bp-xl) {
+    margin-right: -30vw;
+    margin-bottom: -70%;
+    transform: translateY(-10rem);
+  }
+
+  @media (min-width: $bp-svg-container-max-width) {
+    margin-right: -38rem;
+  }
+
+  @media (min-width: 188rem) {
+    margin-right: -25vw;
+  }
+}

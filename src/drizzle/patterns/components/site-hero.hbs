@@ -1,0 +1,29 @@
+<section class="c-site-hero o-layout__flex">
+  <svg class="c-site-hero__svg-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 433">
+    <defs>
+      <path id="hero-b-path" d="M0 1106c153.86-38.446 274.876-64.427 363.045-77.943 132.253-20.274 575.27-58.176 741.256-107.945C1214.958 886.933 1326.858 813.562 1440 700v406H0z"/>
+      <filter id="hero-b-shadow" width="104%" height="114.3%" x="-2%" y="-10.7%" filterUnits="objectBoundingBox">
+        <feOffset dy="-15" in="SourceAlpha" result="shadowOffsetOuter1"/>
+        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7"/>
+        <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+      </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(0 -673)">
+      <use fill="#000" filter="url(#hero-b-shadow)" xlink:href="#hero-b-path"/>
+      <use fill="#FFF" xlink:href="#hero-b-path"/>
+    </g>
+  </svg>
+  {{> patterns.svg.monkey }}
+  {{> patterns.svg.cloud-skinny--once }}
+  {{> patterns.svg.cloud-two-skinny-bottom }}
+  {{> patterns.svg.cloud-asymetric }}
+  {{> patterns.svg.cloud-skinny }}
+  {{> patterns.svg.cloud-two-skinny-top }}
+  {{> patterns.svg.cloud-standard }}
+  <div class="c-site-hero__info rellax">
+    {{>patterns.svg.logo}}
+    <img class="svg-giraffe" src="/svg/giraffe.svg">
+    <h1 class="c-site-hero__title">Discover a smarter way to play.</h1>
+    <h3 class="c-site-hero__subtitle">At A Modern Eden, our animal illustrations are the foundation for our fun, educational toys.</h3>
+  </div>
+</section>
